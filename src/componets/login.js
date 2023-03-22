@@ -15,7 +15,7 @@ export const Login = () => {
       <label for="psw"><b>Contraseña</b></label>
       <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-      <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+      <a <img src = 'https://i.ibb.co/1nDpBf4/btn-google-signin-light-pressed-web.png' id = 'google'> href="#" class="google btn"><i class="fa fa-google fa-fw" >
             </i> Login with Google+
           </a>
     </div>
@@ -42,7 +42,7 @@ export const Login = () => {
 
   // Add event listeners to the login component
 
-  div.querySelector('.google').addEventListener('click', (e) => {
+  document.getElementById('google').addEventListener('click', (e) => {
     e.preventDefault();
     signInWithGoogle()
       .then(
