@@ -80,10 +80,10 @@
     -webkit-user-select: none;
     touch-action: manipulation;
 }
-.btnRegister, #btnregister {
+.btnRegister {
   background-color: #FFB703;
 }
-.btnLogin {
+.btnLogin, #btnregister {
   background-color: #1d3557;
 }
 .btnLogin:hover, .btnRegister:hover, #btnregister:hover{
@@ -349,9 +349,7 @@ text-align: center;
     font-size: 70%; 
   }
 }
-
-
-/*vista para movil reg*/
+/*vista para movil register*/
 @media(max-width:390px){
   body{
     background-color:  #F1FAEE; 
@@ -371,7 +369,7 @@ text-align: center;
 }
 .tituloReg{
   margin-top: 5%;
-  color: red;
+  color:#1d3557;
 }
 .containerTitulo{
   background-color: #E0EAF1;
@@ -410,11 +408,13 @@ justify-content: left;
   margin-bottom: -5%;
 }
 .labelReg{
-  width: 40%;
+  width: 50%;
+  height: 50%;
+  font-size: 3px;
 }
 .inputReg{
-  width: 70%;
-  height:60% ;
+  width: 50%;
+  height:50% ;
   display: grid;
 }
 }
