@@ -57,7 +57,7 @@
 
 /* CSS */
 
-.btnLogin , .btnRegister {
+.btnLogin , .btnRegister, #btnregister{
   height: 56px;
     width: 50%;
     align-items: center;    
@@ -80,15 +80,16 @@
     -webkit-user-select: none;
     touch-action: manipulation;
 }
-.btnLogin:hover, .btnRegister:hover{
-  background-color: #B8D1E0;
-}
-.btnRegister{
+.btnRegister, #btnregister {
   background-color: #FFB703;
 }
-.btnLogin{
+.btnLogin {
   background-color: #1d3557;
 }
+.btnLogin:hover, .btnRegister:hover, #btnregister:hover{
+  background-color: #B8D1E0;
+}
+
 .footerHome{
   background-color:#B8D1E0;
   width: 100%;
@@ -170,35 +171,37 @@ text-align: center;
 /*vista register desktop*/
 /*este serà el header*/
 #registerForm{
+  color: #1d3557;
   background-color: #B8D1E0;
   display: flex;
-  width: 80%;
+  width: 70%;
   height: 80%;
-  margin-top: 10%;
+  margin-top: 0%;
   margin-bottom: 10%;
   flex-direction: column;
   justify-content: space-between;
   align-items:center;
 }
 
-/* .tituloReg{
-  margin-top: 5%;
-  color: pink;
+.tituloReg{
+  margin-top: 1%;
+  color: #1d3557;
   text-align: center;
-  display: flex;
-  align-self: center;
-} */
+  
+
+  
+}
 
 .containerTitulo{  
   background-color: #E0EAF1;
   margin-top: 0%;
   margin-bottom: 0%;
-  width: 70%;
+  width: 60%;
   display: flex;
   align-content: center;
   text-align: center;
   align-items: center;
-  padding: 2%;
+  padding: 1%;
   
 }
 
@@ -209,10 +212,10 @@ text-align: center;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   margin-top: 0%;
   margin-bottom: 1%;
-  width: 70%;
+  width: 60%;
   justify-self: center;
   align-items:center;
-  padding: 4%;
+  padding: 2%;
 }
 
 .labelsReg{ 
@@ -221,7 +224,7 @@ text-align: center;
 
 .footerReg{
   display: flex;
-  justify-content: left;    
+  justify-content: left;   
 }
 
 .contLogoReg{
@@ -238,14 +241,22 @@ text-align: center;
 }
 
 .labelReg{
-  width: 80%;
+  width: 70%;
 }
-
 .inputReg{
   width: 80%;
   height:60% ;
   display: grid;
+  background-color: #E0EAF1;
 }
+.optionReg {
+  width: 80%;
+  height:60% ;
+  display: grid;
+  background-color: #E0EAF1;
+}
+
+
 
 /*Vista para movil*/
 
@@ -399,10 +410,10 @@ justify-content: left;
   margin-bottom: -5%;
 }
 .labelReg{
-  width: 80%;
+  width: 40%;
 }
 .inputReg{
-  width: 80%;
+  width: 70%;
   height:60% ;
   display: grid;
 }

@@ -19,33 +19,32 @@ export const register = () => {
       
 
       <label for="name" class='labelReg'> <b>Nombre</b></label>
-      <input type="text" placeholder="Escribe tu nombre" name="name" id="name" class='inputReg'>
+      <input type="text" placeholder="Laura Rodríguez" name="name" id="name" class='inputReg'>
       
       <label for="email" class='labelReg' ><b>Correo electrónico</b></label>
-      <input type="text" placeholder="Correo electrónico" name="email" id="email" required class='inputReg'>
+      <input type="text" placeholder="laurodriguez@gmail.com" name="email" id="email" required class='inputReg'>
      
       <label for="psw" class='labelReg'><b>Contraseña</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" id="psw" required class='inputReg'>
+      <input type="password" placeholder="tu contraseña" name="psw" id="psw" required class='inputReg'>
 
       <label for="nationality" class='labelReg'><b>Nacionalidad</b></label>
-      <input type="text" placeholder="Nacionalidad" name="nationality" id="nationality" class='inputReg'>
+      <input type="text" placeholder="" name="nationality" id="nationality" class='inputReg'>
 
       <label for="Bdate" class='labelReg'><b>Fecha de Nacimiento</b></label>
       <input type="date" placeholder="Fecha de nacimiento" name="Bdate" id="Bdate" class='inputReg'>
 
       <label for="ocupation" class='labelReg'><b>Ocupación</b></label>
-      <input type="text" placeholder="Ocupación" name="ocupation" id="ocupation" class='inputReg'>
-
+      <input type="text" placeholder="" name="ocupation" id="ocupation" class='inputReg'>
       <label for="RedaRol" class='labelReg'><b>Tu rol en Reda</b></label>
       <select name=RedaRol>
       <option value= "expert" class='optionReg'>Especialista</option>
       <option value= "carer" class='optionReg'>Cuidador</option>
       <input type="submit" id="btnregister" value="Register"/>
-    </div>   
+      <div id="divParaErrores"></div>
+      </div>   
     <div class="bottom-container">
       </div>
     </div>
-    <div id="divParaErrores"></div>
     <div class='footerReg'<p>Reda©️</p> </div>
   </form>`;
   // aca metí el form en una constante para que sea mas claro
