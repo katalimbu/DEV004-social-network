@@ -74,6 +74,7 @@ export const feed = () => {
     console.log(feedTitle);
     console.log(feedPost);
     createpost(feedTitle, feedPost);
+    postContainer.reset();
   });
   return squareF;
 };

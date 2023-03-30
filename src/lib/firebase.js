@@ -4,7 +4,7 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 //1 importar firestore
 import { getFirestore } from "firebase/firestore";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, getDocs } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -29,13 +29,49 @@ export const db = getFirestore(app);
 // functiòn crear post que reciba los paràmetros y exportarla e importarla a el fedd
 // a qui pondrìa los parametros internos consultar
 // export const createPost = (titulo, descripcion) => { ... addDoc
-export const createpost = (titulo, descripcion) => addDoc(collection(db, 'post'), {
-  titulo, descripcion,
-});
-
 export const saveUsers = (name, email, password, nationality, Bdate, ocupation, redaRol) => addDoc(collection(db, 'users'), {
   name, email, password, nationality, Bdate, ocupation, redaRol,
 });
+export const createpost = (titulo, descripcion) => {
+  const colRef = addDoc(collection(db, 'post'), {
+    titulo, descripcion,
+  });
+};
+const colRef = collection(db, 'post');
+
+export const getPost = () => {
+  getDocs(colRef)
+    .then((snapshot) => {
+      let post =[]
+      snapshot.docs.forEach((doc) => {
+        post.push({ ...doc.data(), id: doc.id });
+      });
+      console.log(post)
+    })
+    .catch (err => {
+console.log(err.message);
+  })
+  
+};
+
+/*
+export const getPost = () => {
+  getDocs(collection(db, 'post'));
+  .then((snapshot) =>{
+    let post =  []
+    snapshot.docs.forEach((doc) => {
+      post.push({...doc.data(),id:doc.id})
+      
+    });
+console.log(post)
+  })
+  .catch (err => {
+console.log(err.message)
+  })
+  
+};
+*/
+
 
 // // Initialize Cloud Firestore and get a reference to the service
 // const db = getFirestore(app);
