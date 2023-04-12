@@ -50,7 +50,17 @@ onSnapshot(q, (snapshot) => {
   // console.log('esto es arrPost', arrPostData);
 });
 
-
+export const saveUsers = (name, email, password, nationality, Bdate, ocupation, redaRol) => addDoc(collection(db, 'users'), {
+  name,
+  email,
+  password,
+  nationality,
+  Bdate,
+  ocupation,
+  redaRol,
+  userId: auth.currentUser.uid,
+  like: [],
+});
 export const getpost = () => getDocs(q)
   .then(
     (snapshot) => {
