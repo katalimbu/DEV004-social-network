@@ -188,8 +188,8 @@ export const feed = () => {
           const btnId = btn.getAttribute('data-id');
           // console.log(btnId);
           const formToRemove = document.getElementById('form');
-          const shouldDelete = window.confirm('¿Estás seguro de que deseas eliminar este post?');
-          if (shouldDelete) {
+          const shouldDeletePost = window.confirm('¿Estás seguro de que deseas eliminar este post?');
+          if (shouldDeletePost) {
             formToRemove.remove();
             deletePost(btnId);
           }
