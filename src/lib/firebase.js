@@ -47,10 +47,10 @@ onSnapshot(q, (snapshot) => {
   snapshot.docs.forEach((docAuth) => {
     arrPostData.push({ ...docAuth.data(), id: docAuth.id, userState: auth.currentUser });
   });
-  //console.log('esto es arrPost', arrPostData);
+  // console.log('esto es arrPost', arrPostData);
 });
 
-export const saveUsers = (
+/* export const saveUsers = (
   name,
   email,
   password,
@@ -61,11 +61,15 @@ export const saveUsers = (
 ) => addDoc((colRef), {
   name, email, password, nationality, Bdate, ocupation, redaRol, userId: auth.currentUser.uid,
 });
+*/
+export const saveUsers = (name, email, password, nationality, Bdate, ocupation, redaRol) => addDoc(collection(db, 'users'), {
+  name, email, password, nationality, Bdate, ocupation, redaRol, userId: auth.currentUser.uid, like: [],
+});
 export const getpost = () => getDocs(q)
   .then(
     (snapshot) => {
       const showPost = [];
-      //console.log('esto es showPost');
+      // console.log('esto es showPost');
       snapshot.forEach((docu) => {
         showPost.push({ ...docu.data(), id: docu.id });
       });
