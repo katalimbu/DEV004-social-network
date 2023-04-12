@@ -2,11 +2,11 @@ import { updateCurrentUser } from 'firebase/auth';
 import { navigateTo } from '../router';
 // import { createpost, getpost, eliminatePost } from '../lib/firebase.js';
 import {
-  createpost, getpost, exitApp, auth, deletePost, updatePost,
+  createpost, getpost, exitApp, auth, deletePost, updatePost, saveUsers,
 
 } from '../lib/firebase.js';
 
-//console.log('estamos en feed', auth);
+// console.log('estamos en feed', auth);
 export const feed = () => {
   const squareF = document.createElement('div');
   squareF.setAttribute('class', 'squareF');
@@ -16,7 +16,7 @@ export const feed = () => {
   logoF.setAttribute('src', 'https://i.ibb.co/bWGQN64/REDA-1.png');
   logoF.setAttribute('class', 'logoF');
   const userInfoF = document.createElement('div');
-  userInfoF.setAttribute('class', 'userInfoDivF')
+  userInfoF.setAttribute('class', 'userInfoDivF');
   const userAvatar = document.createElement('img');
   userAvatar.setAttribute(
     'src',
@@ -34,7 +34,7 @@ export const feed = () => {
   const currentUserEmailDraw = document.createElement('p');
   currentUserEmailDraw.innerHTML = parseUser.email;
   currentUserEmailDraw.setAttribute('class', 'currentUserMail');
-  //console.log('esto es parseUser', parseUser);
+  // console.log('esto es parseUser', parseUser);
   userExpertChecked.setAttribute('class', 'userExpertChecked');
   userInfoF.setAttribute('class', 'userInfoF');
   const postContainer = document.createElement('form');
@@ -106,7 +106,7 @@ export const feed = () => {
     // console.log(postContainer);
     const feedTitle = e.target.elements.postTitle.value;
     const feedPost = e.target.elements.post.value;
-    //console.log(parseUser.email);
+    // console.log(parseUser.email);
     const feedUser = parseUser.email;
     // console.log(feedTitle);
     // console.log(feedPost);
@@ -149,7 +149,7 @@ export const feed = () => {
         <input type="submit" id="btnSaveEditPost" value="Guardar" class="${auth.currentUser.email === postD.usuario ? 'show' : 'noShow'}" />
         
         </div>`;
-        //form.setAttribute('id', 'form1');
+        // form.setAttribute('id', 'form1');
         //
         // console.log(auth.currentUser.email, postD.usuario);
         // esta es la funcion para guardar el post editado
@@ -186,12 +186,16 @@ export const feed = () => {
         btn.addEventListener('click', (e) => {
           e.preventDefault();
           const btnId = btn.getAttribute('data-id');
-          //console.log(btnId);
-
+          // console.log(btnId);
           const formToRemove = document.getElementById('form');
+          const shouldDelete = window.confirm('¿Estás seguro de que deseas eliminar este post?');
+          if (shouldDelete) {
+            formToRemove.remove();
+            deletePost(btnId);
+          }
+
           formToRemove.remove();
-          //console.log(formToRemove);
-          deletePost(btnId);
+          // console.log(formToRemove);
         });
       });
 
@@ -201,7 +205,7 @@ export const feed = () => {
           e.preventDefault();
           console.log(e);
           const postId = btn.getAttribute('data-id');
-          const postTitulo = 'titulo-' + postId;
+          const postTitulo = `titulo-${postId}`;
           const textAreaPublication = document.getElementById(postId);
           const inputPublication = document.getElementById(postTitulo);
           console.log(inputPublication);
