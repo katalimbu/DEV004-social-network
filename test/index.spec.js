@@ -3,7 +3,8 @@ import { register } from '../src/componets/register';
 import { navigateTo, registerError, showError } from '../src/router';
 import { Login } from '../src/componets/login';
 import { signInWithPassword, registerWithEmail, signInWithGoogle } from '../src/lib/authentication';
-import { saveUsers } from '../src/lib/firebase';
+import { saveUsers, createpost } from '../src/lib/firebase';
+import { feed } from '../src/componets/feed';
 
 jest.mock('../src/lib/authentication', () => ({
   signInWithPassword: jest.fn().mockImplementation(() => Promise.resolve()),
@@ -18,6 +19,7 @@ jest.mock('../src/router', () => ({
 }));
 jest.mock('../src/lib/firebase', () => ({
   saveUsers: jest.fn().mockImplementation(() => Promise.resolve()),
+  createpost: jest.fn().mockImplementation(() => Promise.resolve()),
 }));
 
 describe('register', () => {
@@ -107,6 +109,19 @@ describe('login with google', () => {
     document.querySelector('.google').click();
     setTimeout(() => {
       expect(showError).toHaveBeenCalled();
+      done();
+    });
+  });
+});
+
+describe('feed', () => {
+  it('el usuario retorna un post y llama a la funcion dibujar después del crear el post', (done) => {
+    const dibujar = jest.fn()
+    document.body.appendChild(feed());
+    document.querySelector('#btnPubFeed').click();
+    createpost.mockResolvedValue(Promise.resolve());
+    setTimeout(() => {
+      expect(dibujar).toHaveBeenCalled();
       done();
     });
   });

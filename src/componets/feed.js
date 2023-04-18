@@ -58,6 +58,7 @@ export const feed = () => {
   btnHomeF.setAttribute('class', 'btnHomeF');
   const btnPubF = document.createElement('button');
   btnPubF.setAttribute('class', 'btnPubF');
+  btnPubF.setAttribute('id', 'btnPubFeed');
   btnPubF.textContent = 'publicar';
   btnHomeF.textContent = 'inicio';
 
