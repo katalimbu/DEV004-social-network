@@ -326,7 +326,7 @@ width: 40%;
 height: 60%;
 flex-direction: column;
 border-radius: 20px;
-margin-top: 10%;
+margin-top: 3%;
 }
 .squareHeaderF {
   background-color: #B8D1E0;
@@ -436,10 +436,6 @@ margin: 0%;
 .contenedorIconosPost{
   flex-direction: row;
   display: flex;
-}
-.tituloEdit{
-  margin-bottom: 5%;
-  margin-top:3%;
 }
 textarea, input {
   background-color: #3e6e8347;
@@ -686,7 +682,6 @@ justify-content: center;
   .squareF {
     width: 80%;
     height: 100%;
-    margin-top: 20%;
   }
   .btnLogOut{
     margin-left: 15%;  
