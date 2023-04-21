@@ -66,6 +66,9 @@ export const feed = () => {
   const icon = document.createElement('ion-icon');
   icon.setAttribute('name', 'log-out-outline');
   btnLogOut.appendChild(icon);
+  // const bigContainerF = document.getElementById('root');
+  const btnLogOut2 = document.createElement('button');
+  squareF.appendChild(btnLogOut2);
 
   const likeIcon = document.createElement('img');
   // likeIcon.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/4140/4140047.png');
