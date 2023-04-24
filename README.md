@@ -80,36 +80,14 @@ que va a avisar si las tiene.)
 
 ### 5.2 Definición del producto kata
 
-En el `README.md` cuéntanos brevemente cómo descubriste las necesidades de los
-usuarios y cómo llegaste a la definición final de tu producto. Es importante
-que detalles:
+La aplicacion REDA espera acompañar a quienes que estan pasando por el proceso de crianza, acogiendo a cualquier persona que cumpla esa labor y que en la red le llamamos cuidador. Y por otra parte, apuntamos a que estas personas encuentren la información necesaria y correcta, segun los objetivos educativos que cada familia tenga, y con eso sumamos a los profesionales de Educacion, Psicologia, Fonoaudiologia y Pediatria, los que cumplen un rol de especialista, que quieran aportar desde su conocimiento y experienci, apoyando en conjunto a crear una red  eficiente y acogedora, que no juzgue y eseñe a todos quienes quieran salir de los patrones normativos de eseñanza. 
 
-* Quiénes son los principales usuarios de producto.
-* Qué problema resuelve el producto / para qué le servirá a estos usuarios.
 
 ### 5.3 Historias de usuario kata
 
-Una vez que entiendas las necesidades de tus usuarixs, escribe las Historias de
-Usuario que representen todo lo que necesitan hacer/ver en la Red Social. Cada
-una de tus Historias de Usuario debe tener:
+Para poder programar el proyecto, lo planteamos en 10 historias de usuario.
+![imagenesreadme] srrc
 
-* **Criterios de Aceptación:** todo lo que debe ocurrir para satisfacer las
-  necesidades del usuario.
-
-* **Definición de terminado:** todos los aspectos técnicos que deben cumplirse
-  para que, como equipo, sepan que esa historia está terminada y lista
-  para publicarse. **Todas** tus Historias de Usuario (salvo excepciones), deben
-  incluir estos aspectos en su Definición de Terminado (más todo lo que
-  necesiten agregar):
-
-  - Debe ser una SPA.
-  - Debe ser _responsive_.
-  - Deben haber recibido _code review_ de al menos una compañera de otro equipo.
-  - Hicieron los _test_ unitarios
-  - Testearon manualmente buscando errores e imperfecciones simples.
-  - Hicieron _pruebas_ de usabilidad e incorporaron el _feedback_ de los
-    usuarios como mejoras.
-  - Desplegaron su aplicación y etiquetaron la versión (git tag).
 
 ### 5.4 Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) kata
 
