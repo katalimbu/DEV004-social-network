@@ -1,84 +1,61 @@
-# Creando una Red Social
+# REDA (Red de Apoyo para Cuidadores)
 
 ## Índice
 
-poner el link del deploy
-investigacion de usuario 
+* [1. Preámbulo: introducción a la app](#1-Preámbulo:-introducción-a-la-app)
+* [2. ¿Qué es REDA?, resumen del proyecto.](#2-¿Qué-es-REDA?,-resumen-del-proyecto)
+* [3. Características generales de la aplicación:](#5-criterios-de-aceptación-mínimos-del-proyecto)
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
+## 1. Preámbulo: introducción a la app
 
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
+Buscamos diseñar una red social inclusiva, dedicada a la interacción entre, por un lado:
+a). Personas que tengan menores de edad bajo su cuidado, y por el otro:
+b). profesionistas dedicadxs al cuidado infantil.
 
-## 1. Preámbulo chuz
+Es por ello que, desde el titulo de la app, optamos por utilizar la palabra "cuidador", 
+en vez de "padres" o "madres", buscando enfatizar que en la app es un espacio que busca destacar
+la diversidad de personas quese dedican al cuidado infantil: (padrxs, madrxs, abuelxs, profesorxs, niñerxs, etc.) 
+sin dar por sentado que algún rol es mas relevante que otro, ya que cada contexto de crianza
+es particular.
 
-Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. Las redes
-sociales han invadido nuestras vidas. Las amamos u odiamos, y muchos no podemos
-vivir sin ellas.
+## 2. ¿Qué es REDA?, resumen del proyecto.
 
-![adem-ay-Tk9m_HP4rgQ-unsplash](https://user-images.githubusercontent.com/110297/135544666-4efa54f1-4ff6-4c4c-b398-6df04ef56117.jpg)
+La particularidad de nuestra red social, es que los usuarios pueden tener dos roles: 
+a). Experto.  y 
+b). Cuidador.
 
-Hay redes sociales de todo tipo y para todo tipo de intereses. Por ejemplo,
-en una ronda de financiamiento con inversionistas, se presentó una red social
-para químicos en la que los usuarios podían publicar artículos sobre sus
-investigaciones, comentar en los artículos de sus colegas, y filtrar artículos
-de acuerdo a determinadas etiquetas o su popularidad, lo más reciente, o lo
-más comentado.
+Los usuarios que pueden registrarse como a). "experto" en la app, es porque cuentan con algún titulo universitario,
+certificación o especialidad que respalda la veracidad de su conocimiento, y por ende de sus publicaciones. 
 
-## 2. Resumen del proyecto chuz
+Los usuarios con el rol de b). "cuidador" pueden dar like a las publicaciones, y hacer comentarios sobre ellas.
+Pero no pueden hacer publicaciones. 
 
-En este proyecto construirás una Red Social sobre lo que decidan tú y tu equipo.
-Podría ser, por ejemplo, sobre alimentación saludable, feminismo, educación,
-salud, energías renovables, amantes de las [Empanadas](https://es.wikipedia.org/wiki/Empanada)
-o de los [Tacos de Canasta](https://es.wikipedia.org/wiki/Taco),
-de la [Feijoada](https://es.wikipedia.org/wiki/Feijoada), o de lo que sea.
+El objetivo de lo anterior, es que REDA se constituya como un espacio seguro, donde los cuidadores puedan informarse 
+sobre temas de interés de la mano de expertos, asegurándose de que la información que estan consumiendo tiene algun tipo
+de respaldo profesional.
 
-Tu Red Social tendrá que permitir a cualquier usuario crear una cuenta de acceso
-y loguearse con ella; crear, editar, borrar y _"likear"_ publicacciones.
+## 3. Características generales de la aplicación:
 
-Por lo tanto, en este proyecto construirás una
-[Single-page Application (SPA)](https://es.wikipedia.org/wiki/Single-page_application)
-[_responsive_](https://curriculum.laboratoria.la/es/topics/css/02-responsive) (con más de una vista / página)
-en la que podamos **leer y escribir datos**.
+* Es un SPA.
+* Cada vista cuenta con un diseño responsivo.
+* Cuenta con la implementación de un router para la navegación entre las diferentes vistas de la app.
+* Emplea un servicio externo (firebase y firestore) para el manejo y la persistencia de la información. 
+* Cuenta con una suite de pruebas unitarias asíncronas. 
 
-### Los objetivos generales de este proyecto son los siguientes
-
-* Desarrollar una SPA con temática de red social
-* Aplicar los conceptos de responsividad en el desarrollo de las vistas (templates)
-* Implementar un router para la navegación entre las diferentes vistas de la aplicación
-* Emplear un servicio externo para la persistencia de datos de la aplicación
-* Crear una suite de pruebas unitarias que permitan testear código asíncrono
-
-Para lograr estos objetivos, deberás aprender y hacer uso de las siguientes
-herramientas o habilidades técnicas:
+### Invenstigación.
+A partir de una brevísima explioración con usuarios potenciales de la app:(1 padre de familia biparental,
+1 madre de familia monoparental, y un psicógo experto en la crianza), identificamos que la principal preocupación de 
+los tres usuarios es la dificultad para verificar si la fuente de información que estan consumiendo es 
+veridica y confiable, o si tiene algún sustento cientifico.
 
 
-
-## 5. Criterios de aceptación mínimos del proyecto
-
-### 5.1 Boilerplate
-
-Este proyecto no incluye un _boilerplate_ completo, solo algunos archivos de
-configuración basico, así es que tendrás que definir la estructura de carpetas
-y escribir tus propias Pruebas Unitarias (_tests_). Para hacerlo, puedes guiarte
-de los proyectos anteriores y/o organizar los archivos siguiendo una estructura
-de [Modelo-Vista-Controlador](https://developer.mozilla.org/es/docs/Glossary/MVC).
-
-En este proyecto vamos a usar una herramienta llamada
-[Vite](https://es.vitejs.dev/) para empaquetar nuestros módulos y arrancar
-el servidor de desarrollo, el cual provee nuestros archivos utilizando
-la estrategia `Hot Module Replacement`
-[(HMR)](https://es.vitejs.dev/guide/features.html#hot-module-replacement),
-esto significa que cuando hagas cambios en los archivos que estén siendo
-servidos, el navegador automáticamente se actualizará sin tener que refrescar
-y volver a cargar todo el sitio. Debes tener especial cuidado de no tener
-ninguna _dependencia circular_ en tu código ya que
-[eso puede ocasionar problemas con HMR](https://es.vitejs.dev/guide/troubleshooting.html#ocurre-un-refresco-completo-en-lugar-de-hmr).
-(`eslint-plugin-import` tiene una regla
-[import/no-cycle](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-cycle.md)
-que va a avisar si las tiene.)
-
-### 5.2 Definición del producto kata
+A partir de lo anterior, decidimos que REDA tendria que funcionar como un espacio que responda dicha necesidad:
+es por esa razón que unicamente pueden publicar las personas con licencias adecuadas. 
+### REDA link:
+Reda esta disponible en el siguiente enlace:
+https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
+ 
+ ### 5.2 Definición del producto kata
 
 En el `README.md` cuéntanos brevemente cómo descubriste las necesidades de los
 usuarios y cómo llegaste a la definición final de tu producto. Es importante
