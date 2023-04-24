@@ -5,6 +5,13 @@
 * [1. Preámbulo: introducción a la app](#1-Preámbulo:-introducción-a-la-app)
 * [2. ¿Qué es REDA?, resumen del proyecto.](#2-¿Qué-es-REDA?,-resumen-del-proyecto)
 * [3. Características generales de la aplicación:](#5-criterios-de-aceptación-mínimos-del-proyecto)
+* [4. Definición del producto ](#4-Definición-del-producto)
+* [5. Historias de usuario ](#5-Historias-de-usuario)
+* [6. Diseño de la Interfaz de Usuario (prototipo de baja fidelidad)](#6-Diseño-de-la-Interfaz-de-Usuario-(prototipo-de-baja-fidelidad))
+* [7. Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)](#7-Diseño-de-la-Interfaz-de-Usuario-(prototipo-de-alta-fidelidad))
+* [8. Diseño responsivo de la interfaz de usuario.](#8-Diseño-responsivo-de-la-interfaz-de-usuario.)
+
+
 
 ## 1. Preámbulo: introducción a la app
 
@@ -55,12 +62,12 @@ es por esa razón que unicamente pueden publicar las personas con licencias adec
 Reda esta disponible en el siguiente enlace:
 https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
  
- ### 5.2 Definición del producto 
+ ### 4 Definición del producto 
 
   La aplicacion REDA espera acompañar a quienes que estan pasando por el proceso de crianza, acogiendo a cualquier persona que cumpla esa labor y que en la red le llamamos cuidador. Y por otra parte, apuntamos a que estas personas encuentren la información necesaria y correcta, segun los objetivos educativos que cada familia tenga, y con eso sumamos a los profesionales de Educacion, Psicologia, Fonoaudiologia y Pediatria, los que cumplen un rol de especialista, que quieran aportar desde su conocimiento y experienci, apoyando en conjunto a crear una red  eficiente y acogedora, que no juzgue y eseñe a todos quienes quieran salir de los patrones normativos de eseñanza. 
 
 
-### 5.3 Historias de usuario 
+### 5 Historias de usuario 
 
   Para poder programar el proyecto, lo planteamos en 10 historias de usuario, donde explicabamos cada paso de formacion en la red solcial.
   ![historiasDeUsuario](src/imagenes_readme/historia_2.png)
@@ -70,7 +77,7 @@ https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
   ![historiasDeUsuario](src/imagenes_readme/nueva_historia1.png)
 
 
-### 5.4 Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) 
+### 6 Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) 
 
   En las siguientes imagenes, se pueden apreciar los prototipos de baja, solo en blanco y negro, y con algunas aplicaciones de color para expresar los distintos tipos de usuario.
   ![prototipoDeBaja](src/imagenes_readme/proto_baja1.png)
@@ -79,7 +86,7 @@ https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
   ![prototipoDeBaja](src/imagenes_readme/proto_baja4.png)
   ![prototipoDeBaja](src/imagenes_readme/proto_baja5.png)
 
-### 5.5 Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) 
+### 7 Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) 
 
   En esta seccion se pueden ver los prototipos de alta, en donde ya se pueden apreciar la paleta de colores que elegimos, con los botones según esperabamos que se viera la plataforma al finalizar.(Este no fue el diseño que finalmente elegimos, respetamos los colores base pero cambiamos algunos iconos y botones, que podran apreciar en la pagina final que se entrego.)
 
@@ -88,7 +95,7 @@ https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
   ![prototipoDeAlta](src/imagenes_readme/proto_alta3.png)
   ![prototipoDeAlta](src/imagenes_readme/proto_alta4.png)
   
-### 5.6 Diseño responsivo de la interfaz de usuario.
+### 8 Diseño responsivo de la interfaz de usuario.
 
   En este espacio se veran las imagenes de la plataforma responsiva en un media query de 390 px.
 
