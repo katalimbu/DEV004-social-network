@@ -123,9 +123,9 @@ export const feed = () => {
         // console.log('feed', showPost);
         // esto filtra todo los post que no tengan like
         showPost.filter((p) => p.likes !== undefined).forEach((postD) => {
-          const btnLogOut2 = document.createElement('button');
-          btnLogOut2.setAttribute('class', 'btnLogOut2');
-          squareF.appendChild(btnLogOut2);
+          // const btnLogOut2 = document.createElement('button');
+          // btnLogOut2.setAttribute('class', 'btnLogOut2');
+          // squareF.appendChild(btnLogOut2);
           const form = document.createElement('form');
           form.classList.add('formularioEditar');
           form.setAttribute('data-id', postD.id);
@@ -184,7 +184,6 @@ export const feed = () => {
           // console.log(like);
           like.addEventListener('click', (event) => {
             event.preventDefault();
-            
             // console.log(e);
             // console.log(auth.currentUser.email);
             // este like representa un booleano
@@ -229,6 +228,7 @@ export const feed = () => {
             exitApp()
               .then(() => {
                 navigateTo('/feed');
+                dibujar();
               });
           });
         });
