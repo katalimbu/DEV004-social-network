@@ -78,38 +78,49 @@ ninguna _dependencia circular_ en tu código ya que
 [import/no-cycle](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-cycle.md)
 que va a avisar si las tiene.)
 
-### 5.2 Definición del producto kata
+### 5.2 Definición del producto 
 
-La aplicacion REDA espera acompañar a quienes que estan pasando por el proceso de crianza, acogiendo a cualquier persona que cumpla esa labor y que en la red le llamamos cuidador. Y por otra parte, apuntamos a que estas personas encuentren la información necesaria y correcta, segun los objetivos educativos que cada familia tenga, y con eso sumamos a los profesionales de Educacion, Psicologia, Fonoaudiologia y Pediatria, los que cumplen un rol de especialista, que quieran aportar desde su conocimiento y experienci, apoyando en conjunto a crear una red  eficiente y acogedora, que no juzgue y eseñe a todos quienes quieran salir de los patrones normativos de eseñanza. 
+  La aplicacion REDA espera acompañar a quienes que estan pasando por el proceso de crianza, acogiendo a cualquier persona que cumpla esa labor y que en la red le llamamos cuidador. Y por otra parte, apuntamos a que estas personas encuentren la información necesaria y correcta, segun los objetivos educativos que cada familia tenga, y con eso sumamos a los profesionales de Educacion, Psicologia, Fonoaudiologia y Pediatria, los que cumplen un rol de especialista, que quieran aportar desde su conocimiento y experienci, apoyando en conjunto a crear una red  eficiente y acogedora, que no juzgue y eseñe a todos quienes quieran salir de los patrones normativos de eseñanza. 
 
 
 ### 5.3 Historias de usuario 
 
-Para poder programar el proyecto, lo planteamos en 10 historias de usuario, donde explicabamos cada paso de formacion en la red solcial.
-![historiasDeUsuario](src/imagenes_readme/historia_2.png)
-![historiasDeUsuario](src/imagenes_readme/historia_3.png)
- Con el avance del tiempo, hicimos alguna modificaciones que quedan expresadas en las siguientes imagenes con las historias de usuarias modificadas según avanzamos el proyecto.
-![historiasDeUsuario](src/imagenes_readme/nueva_historia.png)
-![historiasDeUsuario](src/imagenes_readme/nueva_historia1.png)
+  Para poder programar el proyecto, lo planteamos en 10 historias de usuario, donde explicabamos cada paso de formacion en la red solcial.
+  ![historiasDeUsuario](src/imagenes_readme/historia_2.png)
+  ![historiasDeUsuario](src/imagenes_readme/historia_3.png)
+  Con el avance del tiempo, hicimos alguna modificaciones que quedan expresadas en las siguientes imagenes con las historias de usuarias modificadas según avanzamos el proyecto.
+  ![historiasDeUsuario](src/imagenes_readme/nueva_historia.png)
+  ![historiasDeUsuario](src/imagenes_readme/nueva_historia1.png)
 
 
-### 5.4 Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) kata
+### 5.4 Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) 
 
-Debes definir cuál será el flujo que seguirá el usuario dentro de tu aplicación
-y, con eso, diseña la Interfaz de Usuario (UI por sus siglas en inglés) que
-siga este flujo.
+  En las siguientes imagenes, se pueden apreciar los prototipos de baja, solo en blanco y negro, y con algunas aplicaciones de color para expresar los distintos tipos de usuario.
+  ![prototipoDeBaja](src/imagenes_readme/proto_baja1.png)
+  ![prototipoDeBaja](src/imagenes_readme/proto_baja2.png)
+  ![prototipoDeBaja](src/imagenes_readme/proto_baja3.png)
+  ![prototipoDeBaja](src/imagenes_readme/proto_baja4.png)
+  ![prototipoDeBaja](src/imagenes_readme/proto_baja5.png)
 
-### 5.5 Responsive kata
+### 5.5 Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) 
 
-Debe verse bien en dispositivos de pantallas grandes
-(computadoras/es, laptops, etc.) y pequeñas (_tablets_, celulares, etc.). Te
-sugerimos seguir la técnica de [_`mobile first`_](#mobile-first) (más detalles sobre esta técnica
-al final).
+  En esta seccion se pueden ver los prototipos de alta, en donde ya se pueden apreciar la paleta de colores que elegimos, con los botones según esperabamos que se viera la plataforma al finalizar.(Este no fue el diseño que finalmente elegimos, respetamos los colores base pero cambiamos algunos iconos y botones, que podran apreciar en la pagina final que se entrego.)
 
-### 5.6 Consideraciones del comportamiento de la interfaz de usuario (UI) kata
+  ![prototipoDeAlta](src/imagenes_readme/proto_alta1.png)
+  ![prototipoDeAlta](src/imagenes_readme/proto_alta2.png)
+  ![prototipoDeAlta](src/imagenes_readme/proto_alta3.png)
+  ![prototipoDeAlta](src/imagenes_readme/proto_alta4.png)
+  
+### 5.6 Diseño responsivo de la interfaz de usuario.
 
-Estas consideraciones te ayudarán a escribir las Definiciones de Terminado de
-tus H.U.:
+  En este espacio se veran las imagenes de la plataforma responsiva en un media query de 390 px.
+
+  ![responsivo](src/imagenes_readme/responsive_1.png)
+  ![responsivo](src/imagenes_readme/responsive_2.png)
+  ![responsivo](src/imagenes_readme/responsive_3.png)
+  ![responsivo](src/imagenes_readme/responsive_4.png)
+  ![responsivo](src/imagenes_readme/responsive_5.png)
+
 
 #### Creación de cuenta de usuario e inicio de sesión lady
 
