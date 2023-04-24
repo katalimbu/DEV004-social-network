@@ -66,9 +66,6 @@ export const feed = () => {
   const icon = document.createElement('ion-icon');
   icon.setAttribute('name', 'log-out-outline');
   btnLogOut.appendChild(icon);
-  // const bigContainerF = document.getElementById('root');
-  const btnLogOut2 = document.createElement('button');
-  squareF.appendChild(btnLogOut2);
 
   const likeIcon = document.createElement('img');
   // likeIcon.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/4140/4140047.png');
@@ -126,14 +123,16 @@ export const feed = () => {
         // console.log('feed', showPost);
         // esto filtra todo los post que no tengan like
         showPost.filter((p) => p.likes !== undefined).forEach((postD) => {
-          // const postForm = document.createElement('form');
+          const btnLogOut2 = document.createElement('button');
+          btnLogOut2.setAttribute('class', 'btnLogOut2');
+          squareF.appendChild(btnLogOut2);
           const form = document.createElement('form');
           form.classList.add('formularioEditar');
           form.setAttribute('data-id', postD.id);
           form.setAttribute('id', 'form');
           console.log('auth', auth.currentUser);
           form.innerHTML = `<div class="contenedorCurrentUser"> <text disabled>
-           ${postD.usuario}
+          ${postD.usuario}
           </text>
           <div class="contenedorPostCompleto">
           <input name="titulo" id="titulo-${postD.id}" class="tituloEdit" value="${postD.titulo}" disabled />
@@ -148,13 +147,9 @@ export const feed = () => {
           <ion-icon class="corazonIcon" name="${(postD.likes || []).includes(auth.currentUser.email) ? 'heart' : 'heart-outline'}" id="like-${postD.id}" ></ion-icon>  ${postD.likes.length}.
           </div>
           <div class="nuevoPostContainer">
-          <a href="/feed"><ion-icon name="add-circle-outline"></ion-icon>
-          </a> 
+          <ion-icon name="add-circle-outline" type="button" id="btnPostAgain" class="btnPostAgain"></ion-icon>
           </div>
-          
-          
           </div>`;
-
           // Oh con coni:?? significa que si el primer arreglo no existe
           // retorna el array vacio.(nullish)
           // <ion-icon name="heart-outline"></ion-icon>
@@ -189,6 +184,7 @@ export const feed = () => {
           // console.log(like);
           like.addEventListener('click', (event) => {
             event.preventDefault();
+            
             // console.log(e);
             // console.log(auth.currentUser.email);
             // este like representa un booleano
@@ -209,7 +205,6 @@ export const feed = () => {
           });
           squareF.appendChild(form);
         });
-
         const btnsDeletePost = document.querySelectorAll('#btnDeletePost');
         console.log(btnsDeletePost);
         btnsDeletePost.forEach((btn) => {
@@ -225,6 +220,16 @@ export const feed = () => {
               // console.log(formToRemove);
               deletePost(btnId);
             }
+          });
+        });
+        const btnsPostAgain = document.querySelectorAll('#btnPostAgain');
+        btnsPostAgain.forEach((btn) => {
+          btn.addEventListener('click', (event) => {
+            event.preventDefault();
+            exitApp()
+              .then(() => {
+                navigateTo('/feed');
+              });
           });
         });
 

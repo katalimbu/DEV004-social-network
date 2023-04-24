@@ -80,6 +80,12 @@
     -webkit-user-select: none;
     touch-action: manipulation;
 }
+.btnLogOut2{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin:auto;
+}
 #btnregister{
   width: 80%;
   height: 100%;
