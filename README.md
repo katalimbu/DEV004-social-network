@@ -83,10 +83,12 @@ que va a avisar si las tiene.)
 La aplicacion REDA espera acompañar a quienes que estan pasando por el proceso de crianza, acogiendo a cualquier persona que cumpla esa labor y que en la red le llamamos cuidador. Y por otra parte, apuntamos a que estas personas encuentren la información necesaria y correcta, segun los objetivos educativos que cada familia tenga, y con eso sumamos a los profesionales de Educacion, Psicologia, Fonoaudiologia y Pediatria, los que cumplen un rol de especialista, que quieran aportar desde su conocimiento y experienci, apoyando en conjunto a crear una red  eficiente y acogedora, que no juzgue y eseñe a todos quienes quieran salir de los patrones normativos de eseñanza. 
 
 
-### 5.3 Historias de usuario kata
+### 5.3 Historias de usuario 
 
-Para poder programar el proyecto, lo planteamos en 10 historias de usuario.
-![imagenesreadme] srrc
+Para poder programar el proyecto, lo planteamos en 10 historias de usuario, donde explicabamos cada paso de formacion en la red solcial.
+![historiasDeUsuario](src/imagenes_readme/historia_2.png)
+![historiasDeUsuario](src/imagenes_readme/historia_3.png)
+ Con el avance del tiempo, hicimos alguna modificacion que quedan expresadas en las siguientes imagenes.
 
 
 ### 5.4 Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) kata
