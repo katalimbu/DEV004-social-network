@@ -88,7 +88,9 @@ La aplicacion REDA espera acompañar a quienes que estan pasando por el proceso 
 Para poder programar el proyecto, lo planteamos en 10 historias de usuario, donde explicabamos cada paso de formacion en la red solcial.
 ![historiasDeUsuario](src/imagenes_readme/historia_2.png)
 ![historiasDeUsuario](src/imagenes_readme/historia_3.png)
- Con el avance del tiempo, hicimos alguna modificacion que quedan expresadas en las siguientes imagenes.
+ Con el avance del tiempo, hicimos alguna modificaciones que quedan expresadas en las siguientes imagenes con las historias de usuarias modificadas según avanzamos el proyecto.
+![historiasDeUsuario](src/imagenes_readme/nueva_historia.png)
+![historiasDeUsuario](src/imagenes_readme/nueva_historia1.png)
 
 
 ### 5.4 Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) kata
