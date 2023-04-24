@@ -1,133 +1,110 @@
-# Creando una Red Social
+# REDA (Red de Apoyo para Cuidadores)
 
 ## Índice
 
-poner el link del deploy
-investigacion de usuario 
-
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-
-## 1. Preámbulo chuz
-
-Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. Las redes
-sociales han invadido nuestras vidas. Las amamos u odiamos, y muchos no podemos
-vivir sin ellas.
-
-![adem-ay-Tk9m_HP4rgQ-unsplash](https://user-images.githubusercontent.com/110297/135544666-4efa54f1-4ff6-4c4c-b398-6df04ef56117.jpg)
-
-Hay redes sociales de todo tipo y para todo tipo de intereses. Por ejemplo,
-en una ronda de financiamiento con inversionistas, se presentó una red social
-para químicos en la que los usuarios podían publicar artículos sobre sus
-investigaciones, comentar en los artículos de sus colegas, y filtrar artículos
-de acuerdo a determinadas etiquetas o su popularidad, lo más reciente, o lo
-más comentado.
-
-## 2. Resumen del proyecto chuz
-
-En este proyecto construirás una Red Social sobre lo que decidan tú y tu equipo.
-Podría ser, por ejemplo, sobre alimentación saludable, feminismo, educación,
-salud, energías renovables, amantes de las [Empanadas](https://es.wikipedia.org/wiki/Empanada)
-o de los [Tacos de Canasta](https://es.wikipedia.org/wiki/Taco),
-de la [Feijoada](https://es.wikipedia.org/wiki/Feijoada), o de lo que sea.
-
-Tu Red Social tendrá que permitir a cualquier usuario crear una cuenta de acceso
-y loguearse con ella; crear, editar, borrar y _"likear"_ publicacciones.
-
-Por lo tanto, en este proyecto construirás una
-[Single-page Application (SPA)](https://es.wikipedia.org/wiki/Single-page_application)
-[_responsive_](https://curriculum.laboratoria.la/es/topics/css/02-responsive) (con más de una vista / página)
-en la que podamos **leer y escribir datos**.
-
-### Los objetivos generales de este proyecto son los siguientes
-
-* Desarrollar una SPA con temática de red social
-* Aplicar los conceptos de responsividad en el desarrollo de las vistas (templates)
-* Implementar un router para la navegación entre las diferentes vistas de la aplicación
-* Emplear un servicio externo para la persistencia de datos de la aplicación
-* Crear una suite de pruebas unitarias que permitan testear código asíncrono
-
-Para lograr estos objetivos, deberás aprender y hacer uso de las siguientes
-herramientas o habilidades técnicas:
+* [1. Preámbulo: introducción a la app](#1-Preámbulo:-introducción-a-la-app)
+* [2. ¿Qué es REDA?, resumen del proyecto.](#2-¿Qué-es-REDA?,-resumen-del-proyecto)
+* [3. Características generales de la aplicación:](#5-criterios-de-aceptación-mínimos-del-proyecto)
+* [4. Definición del producto ](#4-Definición-del-producto)
+* [5. Historias de usuario ](#5-Historias-de-usuario)
+* [6. Diseño de la Interfaz de Usuario (prototipo de baja fidelidad)](#6-Diseño-de-la-Interfaz-de-Usuario-(prototipo-de-baja-fidelidad))
+* [7. Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)](#7-Diseño-de-la-Interfaz-de-Usuario-(prototipo-de-alta-fidelidad))
+* [8. Diseño responsivo de la interfaz de usuario.](#8-Diseño-responsivo-de-la-interfaz-de-usuario.)
 
 
 
-## 5. Criterios de aceptación mínimos del proyecto
+## 1. Preámbulo: introducción a la app
 
-### 5.1 Boilerplate
+Buscamos diseñar una red social inclusiva, dedicada a la interacción entre, por un lado:
+a). Personas que tengan menores de edad bajo su cuidado, y por el otro:
+b). profesionistas dedicadxs al cuidado infantil.
 
-Este proyecto no incluye un _boilerplate_ completo, solo algunos archivos de
-configuración basico, así es que tendrás que definir la estructura de carpetas
-y escribir tus propias Pruebas Unitarias (_tests_). Para hacerlo, puedes guiarte
-de los proyectos anteriores y/o organizar los archivos siguiendo una estructura
-de [Modelo-Vista-Controlador](https://developer.mozilla.org/es/docs/Glossary/MVC).
+Es por ello que, desde el titulo de la app, optamos por utilizar la palabra "cuidador", 
+en vez de "padres" o "madres", buscando enfatizar que en la app es un espacio que busca destacar
+la diversidad de personas quese dedican al cuidado infantil: (padrxs, madrxs, abuelxs, profesorxs, niñerxs, etc.) 
+sin dar por sentado que algún rol es mas relevante que otro, ya que cada contexto de crianza
+es particular.
 
-En este proyecto vamos a usar una herramienta llamada
-[Vite](https://es.vitejs.dev/) para empaquetar nuestros módulos y arrancar
-el servidor de desarrollo, el cual provee nuestros archivos utilizando
-la estrategia `Hot Module Replacement`
-[(HMR)](https://es.vitejs.dev/guide/features.html#hot-module-replacement),
-esto significa que cuando hagas cambios en los archivos que estén siendo
-servidos, el navegador automáticamente se actualizará sin tener que refrescar
-y volver a cargar todo el sitio. Debes tener especial cuidado de no tener
-ninguna _dependencia circular_ en tu código ya que
-[eso puede ocasionar problemas con HMR](https://es.vitejs.dev/guide/troubleshooting.html#ocurre-un-refresco-completo-en-lugar-de-hmr).
-(`eslint-plugin-import` tiene una regla
-[import/no-cycle](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-cycle.md)
-que va a avisar si las tiene.)
+## 2. ¿Qué es REDA?, resumen del proyecto.
 
-### 5.2 Definición del producto kata
+La particularidad de nuestra red social, es que los usuarios pueden tener dos roles: 
+a). Experto.  y 
+b). Cuidador.
 
-En el `README.md` cuéntanos brevemente cómo descubriste las necesidades de los
-usuarios y cómo llegaste a la definición final de tu producto. Es importante
-que detalles:
+Los usuarios que pueden registrarse como a). "experto" en la app, es porque cuentan con algún titulo universitario,
+certificación o especialidad que respalda la veracidad de su conocimiento, y por ende de sus publicaciones. 
 
-* Quiénes son los principales usuarios de producto.
-* Qué problema resuelve el producto / para qué le servirá a estos usuarios.
+Los usuarios con el rol de b). "cuidador" pueden dar like a las publicaciones, y hacer comentarios sobre ellas.
+Pero no pueden hacer publicaciones. 
 
-### 5.3 Historias de usuario kata
+El objetivo de lo anterior, es que REDA se constituya como un espacio seguro, donde los cuidadores puedan informarse 
+sobre temas de interés de la mano de expertos, asegurándose de que la información que estan consumiendo tiene algun tipo
+de respaldo profesional.
 
-Una vez que entiendas las necesidades de tus usuarixs, escribe las Historias de
-Usuario que representen todo lo que necesitan hacer/ver en la Red Social. Cada
-una de tus Historias de Usuario debe tener:
+## 3. Características generales de la aplicación:
 
-* **Criterios de Aceptación:** todo lo que debe ocurrir para satisfacer las
-  necesidades del usuario.
+* Es un SPA.
+* Cada vista cuenta con un diseño responsivo.
+* Cuenta con la implementación de un router para la navegación entre las diferentes vistas de la app.
+* Emplea un servicio externo (firebase y firestore) para el manejo y la persistencia de la información. 
+* Cuenta con una suite de pruebas unitarias asíncronas. 
 
-* **Definición de terminado:** todos los aspectos técnicos que deben cumplirse
-  para que, como equipo, sepan que esa historia está terminada y lista
-  para publicarse. **Todas** tus Historias de Usuario (salvo excepciones), deben
-  incluir estos aspectos en su Definición de Terminado (más todo lo que
-  necesiten agregar):
+### Invenstigación.
+A partir de una brevísima explioración con usuarios potenciales de la app:(1 padre de familia biparental,
+1 madre de familia monoparental, y un psicógo experto en la crianza), identificamos que la principal preocupación de 
+los tres usuarios es la dificultad para verificar si la fuente de información que estan consumiendo es 
+veridica y confiable, o si tiene algún sustento cientifico.
 
-  - Debe ser una SPA.
-  - Debe ser _responsive_.
-  - Deben haber recibido _code review_ de al menos una compañera de otro equipo.
-  - Hicieron los _test_ unitarios
-  - Testearon manualmente buscando errores e imperfecciones simples.
-  - Hicieron _pruebas_ de usabilidad e incorporaron el _feedback_ de los
-    usuarios como mejoras.
-  - Desplegaron su aplicación y etiquetaron la versión (git tag).
 
-### 5.4 Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) kata
+A partir de lo anterior, decidimos que REDA tendria que funcionar como un espacio que responda dicha necesidad:
+es por esa razón que unicamente pueden publicar las personas con licencias adecuadas. 
+### REDA link:
+Reda esta disponible en el siguiente enlace:
+https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
+ 
+ ### 4 Definición del producto 
 
-Debes definir cuál será el flujo que seguirá el usuario dentro de tu aplicación
-y, con eso, diseña la Interfaz de Usuario (UI por sus siglas en inglés) que
-siga este flujo.
+  La aplicacion REDA espera acompañar a quienes que estan pasando por el proceso de crianza, acogiendo a cualquier persona que cumpla esa labor y que en la red le llamamos cuidador. Y por otra parte, apuntamos a que estas personas encuentren la información necesaria y correcta, segun los objetivos educativos que cada familia tenga, y con eso sumamos a los profesionales de Educacion, Psicologia, Fonoaudiologia y Pediatria, los que cumplen un rol de especialista, que quieran aportar desde su conocimiento y experienci, apoyando en conjunto a crear una red  eficiente y acogedora, que no juzgue y eseñe a todos quienes quieran salir de los patrones normativos de eseñanza. 
 
-### 5.5 Responsive kata
 
-Debe verse bien en dispositivos de pantallas grandes
-(computadoras/es, laptops, etc.) y pequeñas (_tablets_, celulares, etc.). Te
-sugerimos seguir la técnica de [_`mobile first`_](#mobile-first) (más detalles sobre esta técnica
-al final).
+### 5 Historias de usuario 
 
-### 5.6 Consideraciones del comportamiento de la interfaz de usuario (UI) kata
+  Para poder programar el proyecto, lo planteamos en 10 historias de usuario, donde explicabamos cada paso de formacion en la red solcial.
+  ![historiasDeUsuario](src/imagenes_readme/historia_2.png)
+  ![historiasDeUsuario](src/imagenes_readme/historia_3.png)
+  Con el avance del tiempo, hicimos alguna modificaciones que quedan expresadas en las siguientes imagenes con las historias de usuarias modificadas según avanzamos el proyecto.
+  ![historiasDeUsuario](src/imagenes_readme/nueva_historia.png)
+  ![historiasDeUsuario](src/imagenes_readme/nueva_historia1.png)
 
-Estas consideraciones te ayudarán a escribir las Definiciones de Terminado de
-tus H.U.:
+
+### 6 Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) 
+
+  En las siguientes imagenes, se pueden apreciar los prototipos de baja, solo en blanco y negro, y con algunas aplicaciones de color para expresar los distintos tipos de usuario.
+  ![prototipoDeBaja](src/imagenes_readme/proto_baja1.png)
+  ![prototipoDeBaja](src/imagenes_readme/proto_baja2.png)
+  ![prototipoDeBaja](src/imagenes_readme/proto_baja3.png)
+  ![prototipoDeBaja](src/imagenes_readme/proto_baja4.png)
+  ![prototipoDeBaja](src/imagenes_readme/proto_baja5.png)
+
+### 7 Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) 
+
+  En esta seccion se pueden ver los prototipos de alta, en donde ya se pueden apreciar la paleta de colores que elegimos, con los botones según esperabamos que se viera la plataforma al finalizar.(Este no fue el diseño que finalmente elegimos, respetamos los colores base pero cambiamos algunos iconos y botones, que podran apreciar en la pagina final que se entrego.)
+
+  ![prototipoDeAlta](src/imagenes_readme/proto_alta1.png)
+  ![prototipoDeAlta](src/imagenes_readme/proto_alta2.png)
+  ![prototipoDeAlta](src/imagenes_readme/proto_alta3.png)
+  ![prototipoDeAlta](src/imagenes_readme/proto_alta4.png)
+  
+### 8 Diseño responsivo de la interfaz de usuario.
+
+  En este espacio se veran las imagenes de la plataforma responsiva en un media query de 390 px.
+
+  ![responsivo](src/imagenes_readme/responsive_1.png)
+  ![responsivo](src/imagenes_readme/responsive_2.png)
+  ![responsivo](src/imagenes_readme/responsive_3.png)
+  ![responsivo](src/imagenes_readme/responsive_4.png)
+  ![responsivo](src/imagenes_readme/responsive_5.png)
+
 
 #### Creación de cuenta de usuario e inicio de sesión lady
 En el presente proyecto se implementò  Firebase, la plataforma en la nube para el desarrollo de aplicaciones web y móvil de Google. Firebase proporciona servicios de backend, SDK fáciles de usar y bibliotecas de interfaz  las cuales  posibilitan la autenticaciòn de los usuarios y el almacenamiento de las publicaciones que estos deseen crear.
