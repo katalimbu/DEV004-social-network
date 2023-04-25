@@ -149,8 +149,10 @@ export const feed = () => {
           <ion-icon class="corazonIcon" name="${(postD.likes || []).includes(auth.currentUser.email) ? 'heart' : 'heart-outline'}" id="like-${postD.id}" ></ion-icon>  ${postD.likes.length}.
           </div>
           <div class="nuevoPostContainer">
+          <ion-icon name="add-circle-outline" type="button" class="btnPostAgain"
           </div>
-          </div>`;
+          </div>
+          `;
           // <ion-icon name="add-circle-outline" type="button" id="btnPostAgain"
           // class="btnPostAgain"></ion-icon>
           // las lineas 152 y 153 pretendieron tomar el lugar de el boton anchor
@@ -226,16 +228,12 @@ export const feed = () => {
             }
           });
         });
-        // const btnsPostAgain = document.querySelectorAll('#btnPostAgain');
-        // btnsPostAgain.forEach((btn) => {
-        //   btn.addEventListener('click', (event) => {
-        //     event.preventDefault();
-        //     exitApp()
-        //       .then(() => {
-        //         navigateTo('/feed');
-        //         dibujar();
-        //       });
-        //   });
+        const btnsPostAgain = document.querySelectorAll('.btnPostAgain');
+        btnsPostAgain.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            navigateTo('/feed');
+          });
+        });
         // });
 
         const btnsEditar = document.querySelectorAll('#btnEditPost');
