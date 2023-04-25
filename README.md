@@ -65,13 +65,13 @@ es por esa razón que unicamente pueden publicar las personas con licencias adec
 Reda esta disponible en el siguiente enlace:
 https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
  
- ### 4. Definición del producto 
+ ## 4. Definición del producto 
 
   La aplicacion REDA busca acompañar a quienes estan viviendo un proceso de crianza, acogiendo a cualquier persona que cumpla dicha labor.
   Nuestro principal objetivo es que nuestros usuarios encuentren la información confiable y verificada, según las necesidades educativas que cada 
   familia. Para lograrlo, nos apoyamos en profesionales en las áreas de: Educación, Psicología, Fonoaudiología y Pediatría, los cuales desempeñan el rol de especialista 
 
-### 5. Historias de usuario 
+## 5. Historias de usuario 
 
   La planeación del proyecto se basó en 10 historias de usuario.
   ![historiasDeUsuario](src/imagenes_readme/historia_2.png)
@@ -80,7 +80,7 @@ https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
   ![historiasDeUsuario](src/imagenes_readme/nueva_historia.png)
   ![historiasDeUsuario](src/imagenes_readme/nueva_historia1.png)
 
-### 6. Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) 
+## 6. Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) 
 
   En las siguientes imágenes encontramos el prototipo de baja fidelidad del proyecto. La idea general es comunicar el registro de dos tipos de usuario en la app.
   ![prototipoDeBaja](src/imagenes_readme/proto_baja1.png)
@@ -89,14 +89,14 @@ https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
   ![prototipoDeBaja](src/imagenes_readme/proto_baja4.png)
   ![prototipoDeBaja](src/imagenes_readme/proto_baja5.png)
 
-### 7. Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) 
+## 7. Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) 
 
   ![prototipoDeAlta](src/imagenes_readme/proto_alta1.png)
   ![prototipoDeAlta](src/imagenes_readme/proto_alta2.png)
   ![prototipoDeAlta](src/imagenes_readme/proto_alta3.png)
   ![prototipoDeAlta](src/imagenes_readme/proto_alta4.png)
   
-### 8. Diseño responsivo de la interfaz de usuario.
+## 8. Diseño responsivo de la interfaz de usuario.
 
   ![responsivo](src/imagenes_readme/responsive_1.png)
   ![responsivo](src/imagenes_readme/responsive_2.png)
@@ -105,7 +105,7 @@ https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
   ![responsivo](src/imagenes_readme/responsive_5.png)
 
 
-### 9.Creación de cuenta de usuario e inicio de sesión 
+## 9.Creación de cuenta de usuario e inicio de sesión 
 
 En el presente proyecto se implementó Firebase, una plataforma en la nube para el desarrollo de aplicaciones web y móvil de Google. 
 Firebase proporciona servicios de backend, SDK fáciles de usar y bibliotecas de interfaz, las cuales  posibilitan la autenticación 
@@ -130,7 +130,8 @@ Con base en lo anterior, el proyecto REDA posibilita lo siguiente:
   - Antes de que el usuario envìe el formulario de registro o inicio de sesión, se valida que los campos no esten vacíos.
   - Cuando hay errores, se muestran una serie de mensajes descriptivos que ayudan al usuario a corregirlos y registrarse/loguearse correctamente.
 
-#### Muro/timeline 
+### Muro/timeline 
+
  Antes de que el usuario publique contenido de su interés, REDA se encarga de realizar las repectivas validaciones 
  garantizando un adecuado funcionamiento, basados en la validación de usuarios y el comportamiento de la interfaz.
 
@@ -144,39 +145,35 @@ Con base en lo anterior, el proyecto REDA posibilita lo siguiente:
   - Poder dar y quitar like a una publicación. 
    Cabe aclarar que el usuario solo puede dar like una vez y en la interfaz se visualiza la cantidad de 
   likes que tienen los post.
-
-   - El usuario solo puede  eliminar sus propios posts, no las publiaciones pertenecientes a otros 
+  - El usuario solo puede  eliminar sus propios posts, no las publiaciones pertenecientes a otros 
      usuarios.
-   Se le muestra al usuario una ventana que le pide confirmar antes de elimianr cualquier publicación.
+   Se le muestra al usuario una ventana que le pide confirmar antes de eliminar cualquier publicación.
   - El usuario solo puede editar sus propias publicaciones.
   Cuando el usuario modifica un escrito, éste se actualiza y le  permite guardar y publicar los nuevos 
   cambios.
-  -
-   
   
 
-### 10. Consideraciones técnicas Front-end 
+## 10. Consideraciones técnicas Front-end 
 
-En el presente proyecto se separó las responsabilidades permtiendo un funcionamiento sencillo y eficaz.
-Es por esto que se créo un archivo Java Script por cada una de las vistas:
-- Home: Página de inicio la cual muestra la opción de inciar sesión o registrarse.
-- Register: Página que le indica al usuario la información que debe digitar para regsistrarse.
-- Login : Vista que le posibilita al usuario anteriormente registrado iniciar sesión o para lo no registrados existe la opción de ingresar con uan cuenta de Google.
+En el presente proyecto se divideron las responsabilidades permitiendo un funcionamiento sencillo y eficaz.
+Es por ello que se creó un archivo Javascript por cada una de las vistas:
+
+- Home: Página de inicio, la cual muestra la opción de inciar sesión o registrarse.
+- Register: Página que le indica al usuario la información que debe digitar para registrarse.
+- Login: Vista que le posibilita al usuario ya registrado, iniciar sesión. Para el usuario no registrado, existe la opción de ingresar con una cuenta de Google.
 - Feed: Implementación de las funciones importadas del archivo Firebase.js que permitieron la funcionalidades de REDA anteriormente descritas.
-- Firebase.js: En este documento se crearon todas las funciones que permiten crear, visualizar, editar, likear, deslikear y eliminar un post.
-- Autenticación: En este apartado se crearon las funciones que le permiten al usuario registarse e inciar sesión.
-- Router: en este archivo se crea por un lado la función que permite navegar por los diferentes archivos, y por el otro la función que permite identificar qué usuario se encuentra logueado.
+- Firebase: En este documento se crearon todas las funciones que permiten crear, visualizar, editar, likear, deslikear y eliminar un post.
+- Autentication: En este apartado se crearon las funciones que le permiten al usuario registarse e inciar sesión.
+- Router: en este archivo se crea por un lado la función que permite navegar por los diferentes archivos, y por el otro la función que permite identificar qué usuario se     encuentra logueado en tiempo real.
 - Routes:  En este documento se crean las rutas de las vistas del proyecto.
 - Main: En este archivo se inicializan las rutas.
 - Styles: En este documento se configura la parte estética de todas las vistas.
 
-Con el objetivo de garantizar la velocidad de la página se implemento una Single-page application, es decir, un sitio web que cabe en una sola página con el propósito de dar una experiencia más fluida a los usuarios, como si fuera una aplicación de escritorio.
+Con el objetivo de garantizar la velocidad de la página se implementó una Single Page Application (SPA). Es decir, un sitio web que cabe en una sola página con el propósito de crear una experiencia más fluida al usuario. 
 
-
-
-#### 11.Pruebas unitarias (unit tests) 
-Con el objetivo de garantizar la calidad del código implementado se relizaron 11 test a las funciones implementadas haciendo uso de Jest. Cabe destacar que el proyecto cumple con una covertura total de 96.8% de 100% porcentaje considerado alto.
-    ![test](src/imagenes_readme/test_SN.png)
+## 11.Pruebas unitarias (unit tests) 
+Con el objetivo de garantizar la calidad del código implementado, se relizaron 11 test a las funciones ejecutadas, haciendo uso de Jest. Cabe destacar que el proyecto cumple con una covertura total de 96.8% de 100%. 
+![test](src/imagenes_readme/test_SN.png)
 
 
 
