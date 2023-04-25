@@ -2,14 +2,17 @@
 
 ## Índice
 
-* [1. Preámbulo: introducción a la app](#1-Preámbulo:-introducción-a-la-app)
-* [2. ¿Qué es REDA?, resumen del proyecto.](#2-¿Qué-es-REDA?,-resumen-del-proyecto)
-* [3. Características generales de la aplicación:](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [4. Definición del producto ](#4-Definición-del-producto)
-* [5. Historias de usuario ](#5-Historias-de-usuario)
-* [6. Diseño de la Interfaz de Usuario (prototipo de baja fidelidad)](#6-Diseño-de-la-Interfaz-de-Usuario-(prototipo-de-baja-fidelidad))
-* [7. Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)](#7-Diseño-de-la-Interfaz-de-Usuario-(prototipo-de-alta-fidelidad))
-* [8. Diseño responsivo de la interfaz de usuario.](#8-Diseño-responsivo-de-la-interfaz-de-usuario.)
+* [1. Preámbulo: introducción a la app](#1.-Preámbulo:-introducción-a-la-app)
+* [2. ¿Qué es REDA?, resumen del proyecto.](#2.-¿Qué-es-REDA?,-resumen-del-proyecto)
+* [3. Características generales de la aplicación:](#3.-criterios-de-aceptación-mínimos-del-proyecto)
+* [4. Definición del producto ](#4.-Definición-del-producto)
+* [5. Historias de usuario ](#5.-Historias-de-usuario)
+* [6. Diseño de la Interfaz de Usuario (prototipo de baja fidelidad)](#6.-Diseño-de-la-Interfaz-de-Usuario-(prototipo-de-baja-fidelidad))
+* [7. Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)](#7.-Diseño-de-la-Interfaz-de-Usuario-(prototipo-de-alta-fidelidad))
+* [8. Diseño responsivo de la interfaz de usuario.](#8.-Diseño-responsivo-de-la-interfaz-de-usuario.)
+* [9. Creación de cuenta de usuario e inicio de sesión ](#9.-Creación-de-cuenta-de-usuario-e-inicio-de-sesión)
+* [10. Consideraciones técnicas Front-end](#10.-Consideraciones-técnicas-Front-end)
+* [11.Pruebas unitarias (unit tests)](#11.-Pruebas-unitarias-(unit-tests))
 
 
 
@@ -21,7 +24,7 @@ b). profesionistas dedicadxs al cuidado infantil.
 
 Es por ello que, desde el titulo de la app, optamos por utilizar la palabra "cuidador", 
 en vez de "padres" o "madres", buscando enfatizar que en la app es un espacio que busca destacar
-la diversidad de personas quese dedican al cuidado infantil: (padrxs, madrxs, abuelxs, profesorxs, niñerxs, etc.) 
+la diversidad de personas que se dedican al cuidado infantil: (padrxs, madrxs, abuelxs, profesorxs, niñerxs, etc.) 
 sin dar por sentado que algún rol es mas relevante que otro, ya que cada contexto de crianza
 es particular.
 
@@ -50,54 +53,50 @@ de respaldo profesional.
 * Cuenta con una suite de pruebas unitarias asíncronas. 
 
 ### Invenstigación.
-A partir de una brevísima explioración con usuarios potenciales de la app:(1 padre de familia biparental,
-1 madre de familia monoparental, y un psicógo experto en la crianza), identificamos que la principal preocupación de 
+A partir de una explioración con usuarios potenciales de la app:(1 padre de familia biparental,
+1 madre de familia monoparental, y un psicógo experto en crianza), identificamos que la principal preocupación de 
 los tres usuarios es la dificultad para verificar si la fuente de información que estan consumiendo es 
 veridica y confiable, o si tiene algún sustento cientifico.
 
 
-A partir de lo anterior, decidimos que REDA tendria que funcionar como un espacio que responda dicha necesidad:
+A partir de lo anterior, decidimos que REDA tendria que funcionar como un espacio que responda a dicha necesidad:
 es por esa razón que unicamente pueden publicar las personas con licencias adecuadas. 
 ### REDA link:
 Reda esta disponible en el siguiente enlace:
 https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
  
- ### 4 Definición del producto 
+ ## 4. Definición del producto 
 
-  La aplicacion REDA espera acompañar a quienes que estan pasando por el proceso de crianza, acogiendo a cualquier persona que cumpla esa labor y que en la red le llamamos cuidador. Y por otra parte, apuntamos a que estas personas encuentren la información necesaria y correcta, segun los objetivos educativos que cada familia tenga, y con eso sumamos a los profesionales de Educacion, Psicologia, Fonoaudiologia y Pediatria, los que cumplen un rol de especialista, que quieran aportar desde su conocimiento y experienci, apoyando en conjunto a crear una red  eficiente y acogedora, que no juzgue y eseñe a todos quienes quieran salir de los patrones normativos de eseñanza. 
+  La aplicacion REDA busca acompañar a quienes estan viviendo un proceso de crianza, acogiendo a cualquier persona que cumpla dicha labor.
+  Nuestro principal objetivo es que nuestros usuarios encuentren la información confiable y verificada, según las necesidades educativas que cada 
+  familia. Para lograrlo, nos apoyamos en profesionales en las áreas de: Educación, Psicología, Fonoaudiología y Pediatría, los cuales desempeñan el rol de especialista 
 
+## 5. Historias de usuario 
 
-### 5 Historias de usuario 
-
-  Para poder programar el proyecto, lo planteamos en 10 historias de usuario, donde explicabamos cada paso de formacion en la red solcial.
+  La planeación del proyecto se basó en 10 historias de usuario.
   ![historiasDeUsuario](src/imagenes_readme/historia_2.png)
   ![historiasDeUsuario](src/imagenes_readme/historia_3.png)
-  Con el avance del tiempo, hicimos alguna modificaciones que quedan expresadas en las siguientes imagenes con las historias de usuarias modificadas según avanzamos el proyecto.
+  En el transcurso del proyecto, realizamos modificaciones, las cuales reportamos en las siguientes imágenes:
   ![historiasDeUsuario](src/imagenes_readme/nueva_historia.png)
   ![historiasDeUsuario](src/imagenes_readme/nueva_historia1.png)
 
+## 6. Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) 
 
-### 6 Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) 
-
-  En las siguientes imagenes, se pueden apreciar los prototipos de baja, solo en blanco y negro, y con algunas aplicaciones de color para expresar los distintos tipos de usuario.
+  En las siguientes imágenes encontramos el prototipo de baja fidelidad del proyecto. La idea general es comunicar el registro de dos tipos de usuario en la app.
   ![prototipoDeBaja](src/imagenes_readme/proto_baja1.png)
   ![prototipoDeBaja](src/imagenes_readme/proto_baja2.png)
   ![prototipoDeBaja](src/imagenes_readme/proto_baja3.png)
   ![prototipoDeBaja](src/imagenes_readme/proto_baja4.png)
   ![prototipoDeBaja](src/imagenes_readme/proto_baja5.png)
 
-### 7 Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) 
-
-  En esta seccion se pueden ver los prototipos de alta, en donde ya se pueden apreciar la paleta de colores que elegimos, con los botones según esperabamos que se viera la plataforma al finalizar.(Este no fue el diseño que finalmente elegimos, respetamos los colores base pero cambiamos algunos iconos y botones, que podran apreciar en la pagina final que se entrego.)
+## 7. Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) 
 
   ![prototipoDeAlta](src/imagenes_readme/proto_alta1.png)
   ![prototipoDeAlta](src/imagenes_readme/proto_alta2.png)
   ![prototipoDeAlta](src/imagenes_readme/proto_alta3.png)
   ![prototipoDeAlta](src/imagenes_readme/proto_alta4.png)
   
-### 8 Diseño responsivo de la interfaz de usuario.
-
-  En este espacio se veran las imagenes de la plataforma responsiva en un media query de 390 px.
+## 8. Diseño responsivo de la interfaz de usuario.
 
   ![responsivo](src/imagenes_readme/responsive_1.png)
   ![responsivo](src/imagenes_readme/responsive_2.png)
@@ -106,79 +105,75 @@ https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
   ![responsivo](src/imagenes_readme/responsive_5.png)
 
 
-#### Creación de cuenta de usuario e inicio de sesión lady
-En el presente proyecto se implementò  Firebase, la plataforma en la nube para el desarrollo de aplicaciones web y móvil de Google. Firebase proporciona servicios de backend, SDK fáciles de usar y bibliotecas de interfaz  las cuales  posibilitan la autenticaciòn de los usuarios y el almacenamiento de las publicaciones que estos deseen crear.
-Con base a lo anterior, el proyecto REDA posibilita lo siguiente:
+## 9.Creación de cuenta de usuario e inicio de sesión 
 
-* Creaciòn de cuenta e inicio de sesiòn:
+En el presente proyecto se implementó Firebase, una plataforma en la nube para el desarrollo de aplicaciones web y móvil de Google. 
+Firebase proporciona servicios de backend, SDK fáciles de usar y bibliotecas de interfaz, las cuales  posibilitan la autenticación 
+de los usuarios y el almacenamiento de las publicaciones que estos deseen crear.s
+
+Con base en lo anterior, el proyecto REDA posibilita lo siguiente:
+
+* Creación de cuenta e inicio de sesión:
 - Crear una cuenta de acceso y autenticación con cuenta de correo y contraseña.
-- Iniciar sesiòn con la cuenta anteriormente creada.
-- Iniciar sesiòn con una cuenta de Google.
+- Iniciar sesión con la cuenta anteriormente creada.
+- Iniciar sesión con una cuenta de Google.
  
  Las anteriores funcionalidades cumplen una serie de requisitos (validaciones) y comportamientos escenciales para su correcto funcionamiento.
 
 * Validaciones:
-  - Si la cuenta no es vàlida, el usuario no puede inciar sesiòn.
-  - No pueden haber usuarios repetidos.
+  - Si la cuenta no es válida, el usuario no puede inciar sesión.
+  - No puede haber usuarios repetidos.
   - La cuenta de usuario debe ser un correo electrónico válido.
-  - Lo que se escriba en el campo  de contraseña debe ser secreto.
+  - Se oculta lo que se escriba en el campo de contraseña.
 
 * Comportamiento:
-  - Antes de que el usuario envìe el formulario de registro o inicio de sesión se valida que los campos no esten vacìos.
-  - Cuando hay errores se  muestra una serie de mensajes descriptivos que ayuda all usuario a corregirlos.
+  - Antes de que el usuario envìe el formulario de registro o inicio de sesión, se valida que los campos no esten vacíos.
+  - Cuando hay errores, se muestran una serie de mensajes descriptivos que ayudan al usuario a corregirlos y registrarse/loguearse correctamente.
 
-#### Muro/timeline lady
- Antes de que el usuario publique contenido de su interès; REDA se encarga de realizar las repectivas validaciones garantizando un adecuado funcionamiento, las cuales se basan en la validaciòn de usuarios y el comportamiento de la interfaz.
+### Muro/timeline 
+
+ Antes de que el usuario publique contenido de su interés, REDA se encarga de realizar las repectivas validaciones 
+ garantizando un adecuado funcionamiento, basados en la validación de usuarios y el comportamiento de la interfaz.
 
 * Validaciones:
   - Al publicar, Reda valida que exista contenido en la caja de texto.
 * Comportamiento:
-  Es necesario que el usuario haya iniciado sesiòn antes poder relaizar las siguientes actividades:
+  Es necesario que el usuario haya iniciado sesión antes poder relaizar las siguientes actividades:
 
   - Ver las publiaciones propias y de otros usuarios.
   - Poder publicar un post.
   - Poder dar y quitar like a una publicación. 
    Cabe aclarar que el usuario solo puede dar like una vez y en la interfaz se visualiza la cantidad de 
   likes que tienen los post.
-
-   - El usuario solo puede  eliminar sus propios posts, no las publiaciones pertenecientes a otros 
+  - El usuario solo puede  eliminar sus propios posts, no las publiaciones pertenecientes a otros 
      usuarios.
-   Se le muestra al usuario una ventana que le pide confirmar antes de elimianr cualquier publicaciòn.
+   Se le muestra al usuario una ventana que le pide confirmar antes de eliminar cualquier publicación.
   - El usuario solo puede editar sus propias publicaciones.
-  Cuando el usuario modifica un escrito, èste se actualiza y le  permite guardar y publicar los nuevos 
+  Cuando el usuario modifica un escrito, éste se actualiza y le  permite guardar y publicar los nuevos 
   cambios.
-  -
-   
   
 
-### 5.7 Consideraciones técnicas Front-end lady
+## 10. Consideraciones técnicas Front-end 
 
-En el presente proyecto se separò las responsabilidades permtiendo un funcionamiento sencillo y eficaz.
-Es por esto que se crèo un archivo Java Script por cada una de las vistas:
-- Home: Pàgina de inicio la cual muestra la opciòn de inciar sesiòn o registrarse.
-- Register: Pàgina que le indica al usuario la informaciòn que debe digitar para regsistrarse.
-- Login : Vista que le posibilita al usuario anteriormente registrado iniciar sesiòn o para lo no registrados existe la opciòn de ingresar con uan cuenta de Google.
-- Feed: Implementaciòn de las funciones importadas del archivo Firebase.js que permitieron la funcionalidades de REDA anteriormente descritas.
-- Firebase.js: En este documento se crearon todas las funciones que permiten crear, visualizar, editar, likear, deslikear y eliminar un post.
-- Autenticaciòn: En este apartado se crearon las funciones que le permiten al usuario registarse e inciar sesiòn.
-- Router: en este archivo se crea por un lado la funciòn que permite navegar por los diferentes archivos, y por el otro la funciòn que permite identificar què usuario se encuentra logueado.
+En el presente proyecto se divideron las responsabilidades permitiendo un funcionamiento sencillo y eficaz.
+Es por ello que se creó un archivo Javascript por cada una de las vistas:
+
+- Home: Página de inicio, la cual muestra la opción de inciar sesión o registrarse.
+- Register: Página que le indica al usuario la información que debe digitar para registrarse.
+- Login: Vista que le posibilita al usuario ya registrado, iniciar sesión. Para el usuario no registrado, existe la opción de ingresar con una cuenta de Google.
+- Feed: Implementación de las funciones importadas del archivo Firebase.js que permitieron la funcionalidades de REDA anteriormente descritas.
+- Firebase: En este documento se crearon todas las funciones que permiten crear, visualizar, editar, likear, deslikear y eliminar un post.
+- Autentication: En este apartado se crearon las funciones que le permiten al usuario registarse e inciar sesión.
+- Router: en este archivo se crea por un lado la función que permite navegar por los diferentes archivos, y por el otro la función que permite identificar qué usuario se     encuentra logueado en tiempo real.
 - Routes:  En este documento se crean las rutas de las vistas del proyecto.
 - Main: En este archivo se inicializan las rutas.
-- Styles: En este documento se configura la parte estètica de todas las vistas.
+- Styles: En este documento se configura la parte estética de todas las vistas.
 
-Con el objetivo de garantizar la velocidad de la pàgina se implemento una Single-page application, es decir, un sitio web que cabe en una sola página con el propósito de dar una experiencia más fluida a los usuarios, como si fuera una aplicación de escritorio.
+Con el objetivo de garantizar la velocidad de la página se implementó una Single Page Application (SPA). Es decir, un sitio web que cabe en una sola página con el propósito de crear una experiencia más fluida al usuario. 
+
+## 11.Pruebas unitarias (unit tests) 
+Con el objetivo de garantizar la calidad del código implementado, se relizaron 11 test a las funciones ejecutadas, haciendo uso de Jest. Cabe destacar que el proyecto cumple con una covertura total de 96.8% de 100%. 
+![test](src/imagenes_readme/test_SN.png)
 
 
-
-#### Pruebas unitarias (unit tests) lady 
-Con el objetivo de garantizar la calidad del còdigo implementado se relizaron 11 test a las funciones implementadas haciendo uso de Jest. Cabe destacar que el proyecto cumple con una covertura total de 96.8% de 100% porcentaje considerado alto.
-
-
-### 5.8 Consideraciones técnicas UX
-
-* Hacer al menos 2 entrevistas con usuarios.
-* Hacer un  prototipo de baja y alta fidelidad.
-* Asegurarte de que la implementación en código siga los lineamientos del
-  diseño.
-* Hacer sesiones de _testing de usabilidad_ con el producto en HTML.
 
