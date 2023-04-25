@@ -24,7 +24,7 @@ b). profesionistas dedicadxs al cuidado infantil.
 
 Es por ello que, desde el titulo de la app, optamos por utilizar la palabra "cuidador", 
 en vez de "padres" o "madres", buscando enfatizar que en la app es un espacio que busca destacar
-la diversidad de personas quese dedican al cuidado infantil: (padrxs, madrxs, abuelxs, profesorxs, niñerxs, etc.) 
+la diversidad de personas que se dedican al cuidado infantil: (padrxs, madrxs, abuelxs, profesorxs, niñerxs, etc.) 
 sin dar por sentado que algún rol es mas relevante que otro, ya que cada contexto de crianza
 es particular.
 
@@ -53,13 +53,13 @@ de respaldo profesional.
 * Cuenta con una suite de pruebas unitarias asíncronas. 
 
 ### Invenstigación.
-A partir de una brevísima explioración con usuarios potenciales de la app:(1 padre de familia biparental,
-1 madre de familia monoparental, y un psicógo experto en la crianza), identificamos que la principal preocupación de 
+A partir de una explioración con usuarios potenciales de la app:(1 padre de familia biparental,
+1 madre de familia monoparental, y un psicógo experto en crianza), identificamos que la principal preocupación de 
 los tres usuarios es la dificultad para verificar si la fuente de información que estan consumiendo es 
 veridica y confiable, o si tiene algún sustento cientifico.
 
 
-A partir de lo anterior, decidimos que REDA tendria que funcionar como un espacio que responda dicha necesidad:
+A partir de lo anterior, decidimos que REDA tendria que funcionar como un espacio que responda a dicha necesidad:
 es por esa razón que unicamente pueden publicar las personas con licencias adecuadas. 
 ### REDA link:
 Reda esta disponible en el siguiente enlace:
@@ -67,22 +67,22 @@ https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
  
  ### 4. Definición del producto 
 
-  La aplicacion REDA espera acompañar a quienes que estan pasando por el proceso de crianza, acogiendo a cualquier persona que cumpla esa labor y que en la red le llamamos cuidador. Y por otra parte, apuntamos a que estas personas encuentren la información necesaria y correcta, segun los objetivos educativos que cada familia tenga, y con eso sumamos a los profesionales de Educacion, Psicologia, Fonoaudiologia y Pediatria, los que cumplen un rol de especialista, que quieran aportar desde su conocimiento y experienci, apoyando en conjunto a crear una red  eficiente y acogedora, que no juzgue y eseñe a todos quienes quieran salir de los patrones normativos de eseñanza. 
-
+  La aplicacion REDA busca acompañar a quienes estan viviendo un proceso de crianza, acogiendo a cualquier persona que cumpla dicha labor.
+  Nuestro principal objetivo es que nuestros usuarios encuentren la información confiable y verificada, según las necesidades educativas que cada 
+  familia. Para lograrlo, nos apoyamos en profesionales en las áreas de: Educación, Psicología, Fonoaudiología y Pediatría, los cuales desempeñan el rol de especialista 
 
 ### 5. Historias de usuario 
 
-  Para poder programar el proyecto, lo planteamos en 10 historias de usuario, donde explicabamos cada paso de formacion en la red solcial.
+  La planeación del proyecto se basó en 10 historias de usuario.
   ![historiasDeUsuario](src/imagenes_readme/historia_2.png)
   ![historiasDeUsuario](src/imagenes_readme/historia_3.png)
-  Con el avance del tiempo, hicimos alguna modificaciones que quedan expresadas en las siguientes imagenes con las historias de usuarias modificadas según avanzamos el proyecto.
+  En el transcurso del proyecto, realizamos modificaciones, las cuales reportamos en las siguientes imágenes:
   ![historiasDeUsuario](src/imagenes_readme/nueva_historia.png)
   ![historiasDeUsuario](src/imagenes_readme/nueva_historia1.png)
 
-
 ### 6. Diseño de la Interfaz de Usuario (prototipo de baja fidelidad) 
 
-  En las siguientes imagenes, se pueden apreciar los prototipos de baja, solo en blanco y negro, y con algunas aplicaciones de color para expresar los distintos tipos de usuario.
+  En las siguientes imágenes encontramos el prototipo de baja fidelidad del proyecto. La idea general es comunicar el registro de dos tipos de usuario en la app.
   ![prototipoDeBaja](src/imagenes_readme/proto_baja1.png)
   ![prototipoDeBaja](src/imagenes_readme/proto_baja2.png)
   ![prototipoDeBaja](src/imagenes_readme/proto_baja3.png)
@@ -91,16 +91,12 @@ https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
 
 ### 7. Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) 
 
-  En esta seccion se pueden ver los prototipos de alta, en donde ya se pueden apreciar la paleta de colores que elegimos, con los botones según esperabamos que se viera la plataforma al finalizar.(Este no fue el diseño que finalmente elegimos, respetamos los colores base pero cambiamos algunos iconos y botones, que podran apreciar en la pagina final que se entrego.)
-
   ![prototipoDeAlta](src/imagenes_readme/proto_alta1.png)
   ![prototipoDeAlta](src/imagenes_readme/proto_alta2.png)
   ![prototipoDeAlta](src/imagenes_readme/proto_alta3.png)
   ![prototipoDeAlta](src/imagenes_readme/proto_alta4.png)
   
 ### 8. Diseño responsivo de la interfaz de usuario.
-
-  En este espacio se veran las imagenes de la plataforma responsiva en un media query de 390 px.
 
   ![responsivo](src/imagenes_readme/responsive_1.png)
   ![responsivo](src/imagenes_readme/responsive_2.png)
@@ -110,8 +106,12 @@ https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
 
 
 ### 9.Creación de cuenta de usuario e inicio de sesión 
-En el presente proyecto se implementó  Firebase, la plataforma en la nube para el desarrollo de aplicaciones web y móvil de Google. Firebase proporciona servicios de backend, SDK fáciles de usar y bibliotecas de interfaz  las cuales  posibilitan la autenticación de los usuarios y el almacenamiento de las publicaciones que estos deseen crear.
-Con base a lo anterior, el proyecto REDA posibilita lo siguiente:
+
+En el presente proyecto se implementó Firebase, una plataforma en la nube para el desarrollo de aplicaciones web y móvil de Google. 
+Firebase proporciona servicios de backend, SDK fáciles de usar y bibliotecas de interfaz, las cuales  posibilitan la autenticación 
+de los usuarios y el almacenamiento de las publicaciones que estos deseen crear.s
+
+Con base en lo anterior, el proyecto REDA posibilita lo siguiente:
 
 * Creación de cuenta e inicio de sesión:
 - Crear una cuenta de acceso y autenticación con cuenta de correo y contraseña.
@@ -122,16 +122,17 @@ Con base a lo anterior, el proyecto REDA posibilita lo siguiente:
 
 * Validaciones:
   - Si la cuenta no es válida, el usuario no puede inciar sesión.
-  - No pueden haber usuarios repetidos.
+  - No puede haber usuarios repetidos.
   - La cuenta de usuario debe ser un correo electrónico válido.
-  - Lo que se escriba en el campo  de contraseña debe ser secreto.
+  - Se oculta lo que se escriba en el campo de contraseña.
 
 * Comportamiento:
-  - Antes de que el usuario envìe el formulario de registro o inicio de sesión se valida que los campos no esten vacìos.
-  - Cuando hay errores se  muestra una serie de mensajes descriptivos que ayuda all usuario a corregirlos.
+  - Antes de que el usuario envìe el formulario de registro o inicio de sesión, se valida que los campos no esten vacíos.
+  - Cuando hay errores, se muestran una serie de mensajes descriptivos que ayudan al usuario a corregirlos y registrarse/loguearse correctamente.
 
-#### Muro/timeline lady
- Antes de que el usuario publique contenido de su interés; REDA se encarga de realizar las repectivas validaciones garantizando un adecuado funcionamiento, las cuales se basan en la validación de usuarios y el comportamiento de la interfaz.
+#### Muro/timeline 
+ Antes de que el usuario publique contenido de su interés, REDA se encarga de realizar las repectivas validaciones 
+ garantizando un adecuado funcionamiento, basados en la validación de usuarios y el comportamiento de la interfaz.
 
 * Validaciones:
   - Al publicar, Reda valida que exista contenido en la caja de texto.

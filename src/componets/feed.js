@@ -50,7 +50,9 @@ export const feed = () => {
   post.setAttribute('cols', '1');
   post.setAttribute('placeholder', 'Escribe tu post.');
   postTitle.setAttribute('id', 'postTitle');
+  postTitle.setAttribute('required', '');
   post.setAttribute('id', 'post');
+  post.setAttribute('required', '');
   const subsquareF = document.createElement('div');
   subsquareF.setAttribute('class', 'subsquareF');
   const btnHomeF = document.createElement('button');
