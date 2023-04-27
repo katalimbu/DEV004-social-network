@@ -63,7 +63,7 @@ A partir de lo anterior, decidimos que REDA tendria que funcionar como un espaci
 es por esa razón que unicamente pueden publicar las personas con licencias adecuadas. 
 ### REDA link:
 Reda esta disponible en el siguiente enlace:
-https://dev-004-social-network-5lb7w0w97-chuzalvaca.vercel.app/
+https://dev-004-social-network-lwqu2yetm-katalimbu.vercel.app
  
  ## 4. Definición del producto 
 
